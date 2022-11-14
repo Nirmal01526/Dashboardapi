@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="dash.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="throbber" style="display:none; min-height:120px;"></div>
+    <div id="noty-holder"></div>
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i>
+                            MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>
+                            add data <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="investigaciones/favoritas"><i class="fa fa-fw fa-user-plus"></i> MENU 3</a>
+                    </li>
+                    <li>
+                        <a href="sugerencias"><i class="fa fa-fw fa-paper-plane-o"></i> MENU 4</a>
+                    </li>
+                    <li>
+                        <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="search">
+            <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+                <button type="button" class="btn btn-primary ">search</button>
+            </div>
+        </div>
+        <div id="page-wrapper">
+            <button type="submit" class="btn btn-success " onclick="onShow()" id="addData">AddData</button>
+            <div class="container">
+                <div class="row" id="main">
+                    <div class="col-sm-12 col-md-12 well" id="content">
+                        <div class="container">
+                            <form id="form">
+                                <div class="form-row">
+                                    <h1 class="head">AddNewData</h1>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">id</label>
+                                        <input type="id" class="form-control" id="id" placeholder="id">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">Name</label>
+                                        <input type="Name" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">Username</label>
+                                        <input type="Username" class="form-control" id="username"
+                                            placeholder="Username">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">Street</label>
+                                        <input type="text" class="form-control" id="street" placeholder="Street">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">Suite</label>
+                                        <input type="suite" class="form-control" id="suite"
+                                            placeholder="Suite">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">City</label>
+                                        <input type="city" class="form-control" id="city" placeholder="city">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">Zipcode</label>
+                                        <input type="number" class="form-control" id="zipcode"
+                                            placeholder="Zipcode">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">Laptitude</label>
+                                        <input type="Laptitude" class="form-control" id="latitude"
+                                            placeholder="Laptitude">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">Longtitude</label>
+                                        <input type="Longtitude" class="form-control" id="longitude"
+                                            placeholder="Longtitude">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">Phone</label>
+                                        <input type="number" class="form-control" id="phno" placeholder="Phone">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">Website</label>
+                                        <input type="website" class="form-control" id="website"
+                                            placeholder="website">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputEmail4">CompanyName</label>
+                                        <input type="text" class="form-control" id="cmpyname"
+                                            placeholder="CompanyName">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">CatchPharase</label>
+                                        <input type="text" class="form-control" id="catchphrase"
+                                            placeholder="CatchPharase">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPassword4">Business</label>
+                                        <input type="text" class="form-control" id="cmpybs"
+                                            placeholder="Business">
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button type="button" class="btn btn-success" onclick="addData()">Submit</button>
+                                    <button type="button" class="btn btn-danger">Cencel</button>
+
+                                </div>
+
+                            </form>
+                            <table class=" table table-bordered" id="table">
+                                <thead class="table-dark" id="thead">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                        <th>Street</th>
+                                        <th>Suite</th>
+                                        <th>City</th>
+                                        <th>Zipcode</th>
+                                        <th>Laptitude</th>
+                                        <th>Longtitude</th>
+                                        <th>Phone</th>
+                                        <th>Website</th>
+                                        <th>Company Name</th>
+                                        <th>CatchPharase</th>
+                                        <th>Business</th>
+                                        <th>Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+body {
+    margin-top: 50px;
+  
+}
+
+#wrapper {
+    padding-left: 225px;
+}
+
+#page-wrapper {
+    padding: 50px 10px;
+}
+#table{
+    background-color: aquamarine;
+    margin-left: -3.5%;
+}
+
+.side-nav {
+    position: fixed;
+    top: 60px;
+    left: 225px;
+    width: 225px;
+    margin-left: -225px;
+    border-radius: 0;
+    background-color: #222;
+    bottom: 0;
+}
+
+.side-nav>li>a {
+    width: 225px;
+
+}
+
+#form {
+    padding: 2%;
+    width: 75%;
+    background-color: rgb(157, 131, 182);
+    display: none;
+    z-index: 1;
+    margin-left: 5%;
+    margin-top: -7%;
+    /* width: 80%;
+    height: 80vh;
+    background-color: rgb(157, 131, 182);
+    position: relative;
+    align-items: center;
+    margin-top: -50%;
+    margin-left: 24.5%;
+    z-index: 1;
+    display: block;
+    position: fixed;
+    padding-left: 10%; */
+
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#addData{
+    float: right;
+}
+#thead{
+    background-color: #222;
+    color: aliceblue;
+}
+.search{
+    background-color: rgb(158, 183, 231);
+    padding: 2%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
