@@ -30,7 +30,7 @@
                 <ul class="nav navbar-nav side-nav">
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i>
-                            MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                            UserDetails<i class="fa fa-fw fa-angle-down pull-right"></i></a>
                     </li>
                     <li>
                         <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>
@@ -82,8 +82,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputPassword4">Email</label>
-                                        <input type="email" class="form-control" id="email"
-                                            placeholder="Email">
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -93,8 +92,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputPassword4">Suite</label>
-                                        <input type="suite" class="form-control" id="suite"
-                                            placeholder="Suite">
+                                        <input type="suite" class="form-control" id="suite" placeholder="Suite">
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -104,8 +102,7 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputPassword4">Zipcode</label>
-                                        <input type="number" class="form-control" id="zipcode"
-                                            placeholder="Zipcode">
+                                        <input type="number" class="form-control" id="zipcode" placeholder="Zipcode">
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -127,15 +124,13 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputPassword4">Website</label>
-                                        <input type="website" class="form-control" id="website"
-                                            placeholder="website">
+                                        <input type="website" class="form-control" id="website" placeholder="website">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
                                         <label for="inputEmail4">CompanyName</label>
-                                        <input type="text" class="form-control" id="cmpyname"
-                                            placeholder="CompanyName">
+                                        <input type="text" class="form-control" id="cmpyname" placeholder="CompanyName">
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputPassword4">CatchPharase</label>
@@ -144,41 +139,44 @@
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputPassword4">Business</label>
-                                        <input type="text" class="form-control" id="cmpybs"
-                                            placeholder="Business">
+                                        <input type="text" class="form-control" id="cmpybs" placeholder="Business">
                                     </div>
                                 </div>
                                 <div class="button">
-                                    <button type="button" class="btn btn-success" onclick="addData()">Submit</button>
-                                    <button type="button" class="btn btn-danger">Cencel</button>
+                                    <button type="button" class="btn btn-success" onclick="addData()"
+                                        id="submit">Submit</button>
+                                    <button type="button" class="btn btn-danger" onclick="cenCel()">Cencel</button>
+                                    <button type="button" class="btn btn-success" onclick="onUpdate()">UPDATE</button>
 
                                 </div>
 
                             </form>
-                            <table class=" table table-bordered" id="table">
-                                <thead class="table-dark" id="thead">
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Username</th>
-                                        <th>Email</th>
-                                        <th>Street</th>
-                                        <th>Suite</th>
-                                        <th>City</th>
-                                        <th>Zipcode</th>
-                                        <th>Laptitude</th>
-                                        <th>Longtitude</th>
-                                        <th>Phone</th>
-                                        <th>Website</th>
-                                        <th>Company Name</th>
-                                        <th>CatchPharase</th>
-                                        <th>Business</th>
-                                        <th>Action</th>
+                            <div >
+                                <table class=" table table-bordered" id="table">
+                                    <thead class="table-dark" id="thead">
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Username</th>
+                                            <th>Email</th>
+                                            <th>Street</th>
+                                            <th>Suite</th>
+                                            <th>City</th>
+                                            <th>Zipcode</th>
+                                            <th>Laptitude</th>
+                                            <th>Longtitude</th>
+                                            <th>Phone</th>
+                                            <th>Website</th>
+                                            <th>Company Name</th>
+                                            <th>CatchPharase</th>
+                                            <th>Business</th>
+                                            <th>Action</th>
 
-                                    </tr>
-                                </thead>
-                                <tbody id="body"></tbody>
-                            </table>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="body"></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
